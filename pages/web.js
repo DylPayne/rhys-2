@@ -25,11 +25,9 @@ const WebDesktop = () => {
           width: "100%",
           backgroundImage: "url(./wave1.jpg)",
           backgroundSize: "cover",
-          zIndex: -100,
+          // zIndex: -100,
         }}
-      >
-        {/* <Image src="/wave1.jpg" alt="wave" layout="fill" /> */}
-      </div>
+      ></div>
       <div
         style={{
           // minHeight: 600,
@@ -111,11 +109,11 @@ const WebMobile = () => {
           minHeight: 600,
           marginTop: -160,
           width: "100%",
-          // backgroundImage: "url(./wave1.jpg)",
-          // backgroundSize: "cover",
+          backgroundImage: "url(./wave1.jpg)",
+          backgroundSize: "cover",
         }}
       >
-        <Image src="/wave1.jpg" layout="fill" alt="wave" objectFit="cover" />
+        {/* <Image src="/wave1.jpg" layout="fill" alt="wave" objectFit="cover" /> */}
       </div>
       <div
         style={{

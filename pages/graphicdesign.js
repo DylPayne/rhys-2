@@ -104,7 +104,7 @@ const GraphicDesignMobile = () => {
           backgroundSize: "cover",
         }}
       >
-        <Image src="/alps1.jpg" alt="alps" layout="fill" objectFit="cover" />
+        {/* <Image src="/alps1.jpg" alt="alps" layout="fill" objectFit="cover" /> */}
       </div>
       <div
         style={{
