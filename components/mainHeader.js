@@ -23,7 +23,7 @@ const DesktopHeader = () => {
           filter: "drop-shadow(0 0 0.3rem #222222)",
         }}
       >
-        <Image src={"/logo2.png"} width={160} height={60} />
+        <Image src={"/logo2.png"} width={160} height={60} alt="rhys logo" />
       </header>
       <header
         style={{
@@ -49,19 +49,19 @@ const DesktopHeader = () => {
           }}
         >
           <Link passHref href="/">
-            <a className="underline">Home</a>
+            <p className="underline">Home</p>
           </Link>
           <Link passHref href="/web">
-            <a className="underline">Web Design</a>
+            <p className="underline">Web Design</p>
           </Link>
           <Link passHref href="/photography">
-            <a className="underline">Photography</a>
+            <p className="underline">Photography</p>
           </Link>
           <Link passHref href="/graphicdesign">
-            <a className="underline">Graphic Design</a>
+            <p className="underline">Graphic Design</p>
           </Link>
           <Link passHref href="/contact">
-            <a className="underline">Contact</a>
+            <p className="underline">Contact</p>
           </Link>
         </div>
       </header>
@@ -109,23 +109,23 @@ const MobileHeader = () => {
             >
               <br />
               <Link href="/" passHref>
-                <a>Home</a>
+                <p>Home</p>
               </Link>
               <br />
               <Link href="/web" passHref>
-                <a>Web Design</a>
+                <p>Web Design</p>
               </Link>
               <br />
               <Link href="/photography" passHref>
-                <a>Photography</a>
+                <p>Photography</p>
               </Link>
               <br />
               <Link href="/graphicdesign" passHref>
-                <a>Graphic Design</a>
+                <p>Graphic Design</p>
               </Link>
               <br />
               <Link href="/contact" passHref>
-                <a>Contact Us</a>
+                <p>Contact Us</p>
               </Link>
               <br />
             </div>
@@ -139,7 +139,7 @@ const MobileHeader = () => {
             width: "33.33%",
           }}
         >
-          <Image src={"/logo2.png"} width={160} height={60} />
+          <Image src={"/logo2.png"} width={160} height={60} alt="rhys logo" />
         </div>
         <div
           style={{

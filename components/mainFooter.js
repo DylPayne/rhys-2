@@ -15,7 +15,7 @@ const DesktopFooter = () => {
         paddingRight: 50,
       }}
     >
-      <Image src="/logo2.png" width={160} height={60} />
+      <Image src="/logo2.png" width={160} height={60} alt="rhys logo" />
       <Link passHref href="/contact">
         <a style={{ color: "white", fontSize: 20 }} className="underline">
           Contact Us
@@ -39,7 +39,7 @@ const MobileFooter = () => {
         // paddingRight: 50,
       }}
     >
-      <Image src="/logo2.png" width={160} height={60} />
+      <Image src="/logo2.png" width={160} height={60}  alt="rhys logo" />
       <br /><br />
       <Link passHref href="/contact">
         <a style={{ color: "white", fontSize: 20 }} className="underline">

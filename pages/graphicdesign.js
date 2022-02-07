@@ -1,19 +1,39 @@
 import useWindowSize from "../components/windowSize";
 import MainLayout from "../components/mainLayout";
+import Image from "next/image";
+import Head from "next/head";
 
 const GraphicDesignDesktop = () => {
   return (
     <MainLayout>
+      <Head>
+        <title>Rhys | Graphic Design</title>
+        <meta
+          name="description"
+          content="Graphic designers based in Cape Town"
+        />
+        <link rel="icon" href="/favicon.ico" />
+        <meta property="og:title" content="Rhys" />
+        <meta
+          property="og:description"
+          content="We can meet all your graphic design needs!"
+        />
+        <meta property="og:url" content="https://rhys.co.za/graphicdesign" />
+        <meta property="og:type" content="website" />
+      </Head>
       <div
         style={{
-          minHeight: 600,
+          height: 600,
           marginTop: -160,
           width: "100%",
+          display: "flex",
           backgroundImage: "url(./alps1.jpg)",
           backgroundSize: "cover",
           backgroundPosition: "center",
         }}
-      ></div>
+      >
+        {/* <Image src="/alps1.jpg" alt="alps" layout="fill" objectFit="cover" /> */}
+      </div>
       <div
         style={{
           // minHeight: 600,
@@ -60,6 +80,21 @@ const GraphicDesignDesktop = () => {
 const GraphicDesignMobile = () => {
   return (
     <MainLayout>
+      <Head>
+        <title>Rhys | Graphic Design</title>
+        <meta
+          name="description"
+          content="Graphic designers based in Cape Town"
+        />
+        <link rel="icon" href="/favicon.ico" />
+        <meta property="og:title" content="Rhys" />
+        <meta
+          property="og:description"
+          content="We can meet all your graphic design needs!"
+        />
+        <meta property="og:url" content="https://rhys.co.za/graphicdesign" />
+        <meta property="og:type" content="website" />
+      </Head>
       <div
         style={{
           minHeight: 600,
@@ -68,7 +103,9 @@ const GraphicDesignMobile = () => {
           backgroundImage: "url(./alps1.jpg)",
           backgroundSize: "cover",
         }}
-      ></div>
+      >
+        <Image src="/alps1.jpg" alt="alps" layout="fill" objectFit="cover" />
+      </div>
       <div
         style={{
           // minHeight: 600,

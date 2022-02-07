@@ -1,18 +1,35 @@
 import useWindowSize from "../components/windowSize";
 import MainLayout from "../components/mainLayout";
+import Image from "next/image";
+import Head from "next/head";
 
 const WebDesktop = () => {
   return (
     <MainLayout>
+      <Head>
+        <title>Rhys | Web Design</title>
+        <meta name="description" content="Web designers based in Cape Town" />
+        <link rel="icon" href="/favicon.ico" />
+        <meta property="og:title" content="Rhys" />
+        <meta
+          property="og:description"
+          content="We can meet all your web design needs!"
+        />
+        <meta property="og:url" content="https://rhys.co.za/web" />
+        <meta property="og:type" content="website" />
+      </Head>
       <div
         style={{
-          minHeight: 600,
+          height: 600,
           marginTop: -160,
           width: "100%",
           backgroundImage: "url(./wave1.jpg)",
           backgroundSize: "cover",
+          zIndex: -100,
         }}
-      ></div>
+      >
+        {/* <Image src="/wave1.jpg" alt="wave" layout="fill" /> */}
+      </div>
       <div
         style={{
           // minHeight: 600,
@@ -77,15 +94,29 @@ const WebDesktop = () => {
 const WebMobile = () => {
   return (
     <MainLayout>
+      <Head>
+        <title>Rhys | Web Design</title>
+        <meta name="description" content="Web designers based in Cape Town" />
+        <link rel="icon" href="/favicon.ico" />
+        <meta property="og:title" content="Rhys" />
+        <meta
+          property="og:description"
+          content="We can meet all your web design needs!"
+        />
+        <meta property="og:url" content="https://rhys.co.za/web" />
+        <meta property="og:type" content="website" />
+      </Head>
       <div
         style={{
           minHeight: 600,
           marginTop: -160,
           width: "100%",
-          backgroundImage: "url(./wave1.jpg)",
-          backgroundSize: "cover",
+          // backgroundImage: "url(./wave1.jpg)",
+          // backgroundSize: "cover",
         }}
-      ></div>
+      >
+        <Image src="/wave1.jpg" layout="fill" alt="wave" objectFit="cover" />
+      </div>
       <div
         style={{
           // minHeight: 600,

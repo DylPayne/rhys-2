@@ -1,6 +1,7 @@
 import MainLayout from "../components/mainLayout";
 import { useState, useEffect, useRef } from "react";
 import emailjs, { send } from "emailjs-com";
+import Head from "next/head";
 
 // MUI
 import { TextField, Button } from "@mui/material";
@@ -40,6 +41,18 @@ const ContactDesktop = () => {
 
   return (
     <MainLayout>
+      <Head>
+        <title>Rhys | Contact</title>
+        <meta name="description" content="Designers based in Cape Town" />
+        <link rel="icon" href="/favicon.ico" />
+        <meta property="og:title" content="Rhys" />
+        <meta
+          property="og:description"
+          content="We can meet all your design needs!"
+        />
+        <meta property="og:url" content="https://rhys.co.za/contact" />
+        <meta property="og:type" content="website" />
+      </Head>
       <div
         style={{
           minHeight: "100vh",
@@ -73,11 +86,7 @@ const ContactDesktop = () => {
         >
           <a style={{ fontSize: 40 }}>Contact Us</a>
           <br />
-          <form
-            onSubmit={sendEmail}
-            ref={form}
-            id="contact-form"
-          >
+          <form onSubmit={sendEmail} ref={form} id="contact-form">
             <TextField
               margin="dense"
               fullWidth
@@ -120,7 +129,8 @@ const ContactDesktop = () => {
                 setMessage(e.target.value);
               }}
             />
-            <br /><br />
+            <br />
+            <br />
             <Button
               type="submit"
               variant="outlined"
@@ -170,6 +180,18 @@ const ContactMobile = () => {
 
   return (
     <MainLayout>
+      <Head>
+        <title>Rhys | Contact</title>
+        <meta name="description" content="Designers based in Cape Town" />
+        <link rel="icon" href="/favicon.ico" />
+        <meta property="og:title" content="Rhys" />
+        <meta
+          property="og:description"
+          content="We can meet all your design needs!"
+        />
+        <meta property="og:url" content="https://rhys.co.za/contact" />
+        <meta property="og:type" content="website" />
+      </Head>
       <div
         style={{
           minHeight: "100vh",
@@ -203,11 +225,7 @@ const ContactMobile = () => {
         >
           <a style={{ fontSize: 40 }}>Contact Us</a>
           <br />
-          <form
-            onSubmit={sendEmail}
-            ref={form}
-            id="contact-form"
-          >
+          <form onSubmit={sendEmail} ref={form} id="contact-form">
             <TextField
               margin="dense"
               fullWidth
@@ -250,7 +268,8 @@ const ContactMobile = () => {
                 setMessage(e.target.value);
               }}
             />
-            <br /><br />
+            <br />
+            <br />
             <Button
               type="submit"
               variant="outlined"

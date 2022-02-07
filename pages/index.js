@@ -1,10 +1,26 @@
 import MainLayout from "../components/mainLayout";
 import Image from "next/image";
 import useWindowSize from "../components/windowSize";
+import Head from "next/head";
 
 const DesktopHome = () => {
   return (
     <MainLayout>
+      <Head>
+        <title>Rhys | Cape Town</title>
+        <meta
+          name="description"
+          content="Cape Town web designers, photographers and graphic designers"
+        />
+        <link rel="icon" href="/favicon.ico" />
+        <meta property="og:title" content="Rhys" />
+        <meta
+          property="og:description"
+          content="We can meet all your web design, photography and graphic design needs!"
+        />
+        <meta property="og:url" content="https://rhys.co.za/" />
+        <meta property="og:type" content="website" />
+      </Head>
       {/* 01 */}
       <div
         style={{
@@ -82,10 +98,18 @@ const DesktopHome = () => {
             // border: "1px solid red",
             paddingTop: 180,
             zIndex: -10,
-            background: "url(./city1.jpg)",
-            backgroundSize: "cover",
+            // background: "url(./city1.jpg)",
+            // backgroundSize: "cover",
           }}
-        ></div>
+        >
+          <Image
+            src="/city1.jpg"
+            layout="fill"
+            alt="city"
+            objectFit="cover"
+            quality={50}
+          />
+        </div>
       </div>
 
       {/* 02 */}
@@ -164,10 +188,18 @@ const DesktopHome = () => {
             // border: "1px solid red",
             paddingTop: 180,
             zIndex: -10,
-            background: "url(./beach1.jpg)",
-            backgroundSize: "cover",
+            // background: "url(./beach1.jpg)",
+            // backgroundSize: "cover",
           }}
-        ></div>
+        >
+          <Image
+            alt="beach"
+            src="/beach1.jpg"
+            layout="fill"
+            objectFit="cover"
+            quality={50}
+          />
+        </div>
       </div>
 
       {/* 03 */}
@@ -243,10 +275,17 @@ const DesktopHome = () => {
             // border: "1px solid red",
             paddingTop: 180,
             zIndex: -10,
-            background: "url(./workspace1.jpg)",
-            backgroundSize: "cover",
+            // background: "url(./workspace1.jpg)",
+            // backgroundSize: "cover",
           }}
-        ></div>
+        >
+          <Image
+            src="/workspace1.jpg"
+            layout="fill"
+            alt="Workspace"
+            objectFit="cover"
+          />
+        </div>
       </div>
     </MainLayout>
   );
@@ -255,6 +294,21 @@ const DesktopHome = () => {
 const MobileHome = () => {
   return (
     <MainLayout>
+      <Head>
+        <title>Rhys | Cape Town</title>
+        <meta
+          name="description"
+          content="Cape Town web designers, photographers and graphic designers"
+        />
+        <link rel="icon" href="/favicon.ico" />
+        <meta property="og:title" content="Rhys" />
+        <meta
+          property="og:description"
+          content="We can meet all your web design, photography and graphic design needs!"
+        />
+        <meta property="og:url" content="https://rhys.co.za/" />
+        <meta property="og:type" content="website" />
+      </Head>
       {/* 01 */}
       <div
         style={{
@@ -276,10 +330,12 @@ const MobileHome = () => {
             // border: "1px solid red",
             paddingTop: 180,
             zIndex: -10,
-            background: "url(./city1.jpg)",
-            backgroundSize: "cover",
+            // background: "url(./city1.jpg)",
+            // backgroundSize: "cover",
           }}
-        ></div>
+        >
+          <Image src="/city1.jpg" alt="city" layout="fill" objectFit="cover" />
+        </div>
         <div
           style={{
             backgroundColor: "#81b29a",
@@ -290,7 +346,7 @@ const MobileHome = () => {
           }}
         >
           <div>
-            <a
+            <p
               style={{
                 color: "gray",
                 fontSize: 465,
@@ -303,7 +359,7 @@ const MobileHome = () => {
               }}
             >
               01
-            </a>
+            </p>
           </div>
           <div style={{ paddingRight: 40 }}>
             <a
@@ -328,21 +384,15 @@ const MobileHome = () => {
             }}
           >
             <p style={{ textAlign: "center", color: "white" }}>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec
-              purus est, blandit fringilla lectus sit amet, venenatis elementum
-              ipsum. Nullam sollicitudin sem ante, in blandit ex efficitur eu.
-              Nullam suscipit vel enim in pellentesque. Vestibulum quam eros,
-              eleifend quis lobortis eu, maximus a ligula. Proin a magna luctus
-              est sagittis cursus. Aliquam euismod, mi quis placerat facilisis,
-              ex magna congue risus, eu imperdiet ligula justo a ipsum. Cras
-              pellentesque rhoncus leo, ac sollicitudin tortor consectetur eu.
-              Proin faucibus euismod mi, ut mollis ante imperdiet sit amet.
-              Integer ornare suscipit diam non varius. Orci varius natoque
-              penatibus et magnis dis parturient montes, nascetur ridiculus mus.
-              Ut sit amet neque in nunc dapibus condimentum ultrices sed nisl.
-              Mauris pharetra porttitor ultrices. Nulla in feugiat elit.
-              Pellentesque eu velit et enim ornare elementum facilisis sed
-              metus.
+              At Rhys our main focus is web design. We build our sites from
+              scratch, meaning we don’t use Wordpress, Wix or any other similar
+              programs. In order to make sure our sites are as efficient,
+              customisable and fast as possible, we build them from scratch. We
+              use frameworks called React.js and Next.js, which are both very
+              modern technologies. Because we use these frameworks we can also
+              build custom web apps. For example, we can make complex booking
+              systems or staff management websites. Contact us today to get more
+              information.
             </p>
           </div>
         </div>
@@ -369,10 +419,17 @@ const MobileHome = () => {
             // border: "1px solid red",
             paddingTop: 180,
             zIndex: -10,
-            background: "url(./beach1.jpg)",
-            backgroundSize: "cover",
+            // background: "url(./beach1.jpg)",
+            // backgroundSize: "cover",
           }}
-        ></div>
+        >
+          <Image
+            src="/beach1.jpg"
+            alt="beach"
+            layout="fill"
+            objectFit="cover"
+          />
+        </div>
         <div
           style={{
             backgroundColor: "#e07a5f",
@@ -380,6 +437,7 @@ const MobileHome = () => {
             // paddingTop: 180,
             zIndex: 0,
             textAlign: "end",
+            height: "40%",
           }}
         >
           <div>
@@ -393,6 +451,7 @@ const MobileHome = () => {
                 top: 190,
                 zIndex: -10000,
                 opacity: "70%",
+                // height: "100%",
               }}
             >
               02
@@ -421,21 +480,12 @@ const MobileHome = () => {
             }}
           >
             <p style={{ textAlign: "center", color: "white" }}>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec
-              purus est, blandit fringilla lectus sit amet, venenatis elementum
-              ipsum. Nullam sollicitudin sem ante, in blandit ex efficitur eu.
-              Nullam suscipit vel enim in pellentesque. Vestibulum quam eros,
-              eleifend quis lobortis eu, maximus a ligula. Proin a magna luctus
-              est sagittis cursus. Aliquam euismod, mi quis placerat facilisis,
-              ex magna congue risus, eu imperdiet ligula justo a ipsum. Cras
-              pellentesque rhoncus leo, ac sollicitudin tortor consectetur eu.
-              Proin faucibus euismod mi, ut mollis ante imperdiet sit amet.
-              Integer ornare suscipit diam non varius. Orci varius natoque
-              penatibus et magnis dis parturient montes, nascetur ridiculus mus.
-              Ut sit amet neque in nunc dapibus condimentum ultrices sed nisl.
-              Mauris pharetra porttitor ultrices. Nulla in feugiat elit.
-              Pellentesque eu velit et enim ornare elementum facilisis sed
-              metus.
+              We are experts when it comes to photography. Almost every image on
+              this site was taken by us. We use up to date camera equipment to
+              ensure that you get the highest quality images possible. Contact
+              us if you would like us to take professional photographs at your
+              corporate function, wedding, or anything that your imagination
+              desires! We are willing to travel internationally.
             </p>
           </div>
         </div>
@@ -463,10 +513,17 @@ const MobileHome = () => {
             // border: "1px solid red",
             paddingTop: 180,
             zIndex: -10,
-            background: "url(./workspace1.jpg)",
-            backgroundSize: "cover",
+            // background: "url(./workspace1.jpg)",
+            // backgroundSize: "cover",
           }}
-        ></div>
+        >
+          <Image
+            src="/workspace1.jpg"
+            alt="workspace"
+            layout="fill"
+            objectFit="cover"
+          />
+        </div>
         <div
           style={{
             backgroundColor: "#3d405b",
@@ -474,6 +531,7 @@ const MobileHome = () => {
             // paddingTop: 180,
             zIndex: 0,
             textAlign: "end",
+            height: "30%",
           }}
         >
           <div>
@@ -515,21 +573,10 @@ const MobileHome = () => {
             }}
           >
             <p style={{ textAlign: "center", color: "white" }}>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec
-              purus est, blandit fringilla lectus sit amet, venenatis elementum
-              ipsum. Nullam sollicitudin sem ante, in blandit ex efficitur eu.
-              Nullam suscipit vel enim in pellentesque. Vestibulum quam eros,
-              eleifend quis lobortis eu, maximus a ligula. Proin a magna luctus
-              est sagittis cursus. Aliquam euismod, mi quis placerat facilisis,
-              ex magna congue risus, eu imperdiet ligula justo a ipsum. Cras
-              pellentesque rhoncus leo, ac sollicitudin tortor consectetur eu.
-              Proin faucibus euismod mi, ut mollis ante imperdiet sit amet.
-              Integer ornare suscipit diam non varius. Orci varius natoque
-              penatibus et magnis dis parturient montes, nascetur ridiculus mus.
-              Ut sit amet neque in nunc dapibus condimentum ultrices sed nisl.
-              Mauris pharetra porttitor ultrices. Nulla in feugiat elit.
-              Pellentesque eu velit et enim ornare elementum facilisis sed
-              metus.
+              Any web designer has to have graphic design knowledge, so we
+              thought why not also offer this as a separate service? We can make
+              your companies logos, design invites, make adverts and more!
+              Contact us today to find out more information.
             </p>
           </div>
         </div>

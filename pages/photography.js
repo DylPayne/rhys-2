@@ -1,19 +1,35 @@
 import useWindowSize from "../components/windowSize";
 import MainLayout from "../components/mainLayout";
+import Image from "next/image";
+import Head from "next/head";
 
 const PhotographyDesktop = () => {
   return (
     <MainLayout>
+      <Head>
+        <title>Rhys | Photography</title>
+        <meta name="description" content="Photographers based in Cape Town" />
+        <link rel="icon" href="/favicon.ico" />
+        <meta property="og:title" content="Rhys" />
+        <meta
+          property="og:description"
+          content="We can meet all your photography needs!"
+        />
+        <meta property="og:url" content="https://rhys.co.za/photography" />
+        <meta property="og:type" content="website" />
+      </Head>
       <div
         style={{
-          minHeight: 600,
+          height: 600,
           marginTop: -160,
           width: "100%",
           backgroundImage: "url(./beach2.jpg)",
           backgroundSize: "cover",
           backgroundPosition: "center",
         }}
-      ></div>
+      >
+        {/* <Image src="/beach2.jpg" alt="beach" layout="fill" objectFit="cover" /> */}
+      </div>
       <div
         style={{
           // minHeight: 600,
@@ -64,6 +80,18 @@ const PhotographyDesktop = () => {
 const PhotographyMobile = () => {
   return (
     <MainLayout>
+      <Head>
+        <title>Rhys | Photography</title>
+        <meta name="description" content="Photographers based in Cape Town" />
+        <link rel="icon" href="/favicon.ico" />
+        <meta property="og:title" content="Rhys" />
+        <meta
+          property="og:description"
+          content="We can meet all your photography needs!"
+        />
+        <meta property="og:url" content="https://rhys.co.za/photography" />
+        <meta property="og:type" content="website" />
+      </Head>
       <div
         style={{
           minHeight: 600,
