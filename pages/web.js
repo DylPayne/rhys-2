@@ -127,11 +127,11 @@ const WebMobile = () => {
           <a
             style={{
               color: "#81b29a",
-              fontSize: 70,
+              fontSize: 60,
               fontWeight: 100,
               zIndex: 100,
               position: "relative",
-              top: -70,
+              top: -60,
               paddingLeft: 40,
             }}
           >

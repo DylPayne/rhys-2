@@ -221,7 +221,7 @@ const DesktopHome = () => {
             width: "40%",
             paddingTop: 180,
             zIndex: 0,
-            whiteSpace: "nowrap",
+            // whiteSpace: "nowrap",
           }}
         >
           <div>
@@ -365,11 +365,11 @@ const MobileHome = () => {
             <a
               style={{
                 color: "#81b29a",
-                fontSize: 70,
+                fontSize: 60,
                 fontWeight: 100,
                 zIndex: 100,
                 position: "relative",
-                top: -70,
+                top: -60,
               }}
             >
               Web Design
